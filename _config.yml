@@ -1,7 +1,7 @@
 title: Francesco Papaleo
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal website.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://francescopapaleo.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -14,12 +14,22 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-  # Generate social links in footer.
 
-minima:
- social_links:
-   - { platform: github,         user_url: "https://github.com/francescopapaleo/" }
-   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=sTf2rzcAAAAJ" }
-   - { platform: instagram,      user_url: "https://www.instagram.com/francesco.papaleo.music" }
-   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/francescopapaleo/" }
+# Generate social links in footer.
+
+# minima:
+#  social_links:
+#    - { platform: github,         user_url: "https://github.com/francescopapaleo/" }
+#    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=sTf2rzcAAAAJ" }
+#    - { platform: instagram,      user_url: "https://www.instagram.com/francesco.papaleo.music" }
+#    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/francescopapaleo/" }
+  
+collections:
+  projects:
+    output: true
+
+header_pages:
+  - index.md
+  - projects.md
+  - about.md
   
